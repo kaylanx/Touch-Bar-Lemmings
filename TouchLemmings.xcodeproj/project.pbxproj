@@ -17,10 +17,21 @@
 		4E9417051DFD19550009BA55 /* Lemming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9417041DFD19550009BA55 /* Lemming.swift */; };
 		4E9417071DFD44C50009BA55 /* Atlas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E9417061DFD44C50009BA55 /* Atlas.plist */; };
 		4E9417091DFD840B0009BA55 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E9417081DFD840B0009BA55 /* sprites.png */; };
+		58575803249D7C2E00B5F4ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58575802249D7C2E00B5F4ED /* AppDelegate.swift */; };
+		5857580B249D7C2E00B5F4ED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857580A249D7C2E00B5F4ED /* GameViewController.swift */; };
+		5857580E249D7C2E00B5F4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5857580C249D7C2E00B5F4ED /* Main.storyboard */; };
+		58575810249D7C3100B5F4ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5857580F249D7C3100B5F4ED /* Assets.xcassets */; };
+		58575813249D7C3100B5F4ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58575811249D7C3100B5F4ED /* LaunchScreen.storyboard */; };
+		5857581E249D7C9700B5F4ED /* SpriteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58575818249D7C9700B5F4ED /* SpriteLoader.swift */; };
+		5857581F249D7C9700B5F4ED /* Atlas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58575819249D7C9700B5F4ED /* Atlas.plist */; };
+		58575820249D7C9700B5F4ED /* Lemming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857581A249D7C9700B5F4ED /* Lemming.swift */; };
+		58575821249D7C9700B5F4ED /* LemmingsCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857581B249D7C9700B5F4ED /* LemmingsCanvas.swift */; };
+		58575822249D7C9700B5F4ED /* LemmingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857581C249D7C9700B5F4ED /* LemmingsScene.swift */; };
+		58575823249D7C9700B5F4ED /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 5857581D249D7C9700B5F4ED /* sprites.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E9416EA1DFC82D00009BA55 /* TouchLemmings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchLemmings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E9416EA1DFC82D00009BA55 /* MacTouchLemmings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacTouchLemmings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9416ED1DFC82D00009BA55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E9416EF1DFC82D00009BA55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4E9416F11DFC82D00009BA55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,10 +43,30 @@
 		4E9417041DFD19550009BA55 /* Lemming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lemming.swift; sourceTree = "<group>"; };
 		4E9417061DFD44C50009BA55 /* Atlas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Atlas.plist; sourceTree = "<group>"; };
 		4E9417081DFD840B0009BA55 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
+		58575800249D7C2E00B5F4ED /* Evie's Lemmings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Evie's Lemmings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58575802249D7C2E00B5F4ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5857580A249D7C2E00B5F4ED /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5857580D249D7C2E00B5F4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5857580F249D7C3100B5F4ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58575812249D7C3100B5F4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58575814249D7C3100B5F4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58575818249D7C9700B5F4ED /* SpriteLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteLoader.swift; sourceTree = "<group>"; };
+		58575819249D7C9700B5F4ED /* Atlas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Atlas.plist; sourceTree = "<group>"; };
+		5857581A249D7C9700B5F4ED /* Lemming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lemming.swift; sourceTree = "<group>"; };
+		5857581B249D7C9700B5F4ED /* LemmingsCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LemmingsCanvas.swift; sourceTree = "<group>"; };
+		5857581C249D7C9700B5F4ED /* LemmingsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LemmingsScene.swift; sourceTree = "<group>"; };
+		5857581D249D7C9700B5F4ED /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4E9416E71DFC82D00009BA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585757FD249D7C2E00B5F4ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				4E9416EC1DFC82D00009BA55 /* TouchLemmings */,
+				58575801249D7C2E00B5F4ED /* iOSTouchLemmings */,
 				4E9416EB1DFC82D00009BA55 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,7 +88,8 @@
 		4E9416EB1DFC82D00009BA55 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E9416EA1DFC82D00009BA55 /* TouchLemmings.app */,
+				4E9416EA1DFC82D00009BA55 /* MacTouchLemmings.app */,
+				58575800249D7C2E00B5F4ED /* Evie's Lemmings.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,12 +112,31 @@
 			path = TouchLemmings;
 			sourceTree = "<group>";
 		};
+		58575801249D7C2E00B5F4ED /* iOSTouchLemmings */ = {
+			isa = PBXGroup;
+			children = (
+				58575819249D7C9700B5F4ED /* Atlas.plist */,
+				5857581A249D7C9700B5F4ED /* Lemming.swift */,
+				5857581B249D7C9700B5F4ED /* LemmingsCanvas.swift */,
+				5857581C249D7C9700B5F4ED /* LemmingsScene.swift */,
+				58575818249D7C9700B5F4ED /* SpriteLoader.swift */,
+				5857581D249D7C9700B5F4ED /* sprites.png */,
+				58575802249D7C2E00B5F4ED /* AppDelegate.swift */,
+				5857580A249D7C2E00B5F4ED /* GameViewController.swift */,
+				5857580C249D7C2E00B5F4ED /* Main.storyboard */,
+				5857580F249D7C3100B5F4ED /* Assets.xcassets */,
+				58575811249D7C3100B5F4ED /* LaunchScreen.storyboard */,
+				58575814249D7C3100B5F4ED /* Info.plist */,
+			);
+			path = iOSTouchLemmings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4E9416E91DFC82D00009BA55 /* TouchLemmings */ = {
+		4E9416E91DFC82D00009BA55 /* MacTouchLemmings */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E9416F91DFC82D00009BA55 /* Build configuration list for PBXNativeTarget "TouchLemmings" */;
+			buildConfigurationList = 4E9416F91DFC82D00009BA55 /* Build configuration list for PBXNativeTarget "MacTouchLemmings" */;
 			buildPhases = (
 				4E9416E61DFC82D00009BA55 /* Sources */,
 				4E9416E71DFC82D00009BA55 /* Frameworks */,
@@ -94,9 +146,26 @@
 			);
 			dependencies = (
 			);
-			name = TouchLemmings;
+			name = MacTouchLemmings;
 			productName = TouchLemmings;
-			productReference = 4E9416EA1DFC82D00009BA55 /* TouchLemmings.app */;
+			productReference = 4E9416EA1DFC82D00009BA55 /* MacTouchLemmings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		585757FF249D7C2E00B5F4ED /* iOSTouchLemmings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58575815249D7C3100B5F4ED /* Build configuration list for PBXNativeTarget "iOSTouchLemmings" */;
+			buildPhases = (
+				585757FC249D7C2E00B5F4ED /* Sources */,
+				585757FD249D7C2E00B5F4ED /* Frameworks */,
+				585757FE249D7C2E00B5F4ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSTouchLemmings;
+			productName = iOSTouchLemmings;
+			productReference = 58575800249D7C2E00B5F4ED /* Evie's Lemmings.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,12 +174,18 @@
 		4E9416E21DFC82D00009BA55 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Erik Olsson";
 				TargetAttributes = {
 					4E9416E91DFC82D00009BA55 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = SR5D6FC58T;
+						ProvisioningStyle = Automatic;
+					};
+					585757FF249D7C2E00B5F4ED = {
+						CreatedOnToolsVersion = 11.2.1;
+						DevelopmentTeam = SR5D6FC58T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,6 +195,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -128,7 +204,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4E9416E91DFC82D00009BA55 /* TouchLemmings */,
+				4E9416E91DFC82D00009BA55 /* MacTouchLemmings */,
+				585757FF249D7C2E00B5F4ED /* iOSTouchLemmings */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +219,18 @@
 				4E9416F21DFC82D00009BA55 /* Assets.xcassets in Resources */,
 				4E9417071DFD44C50009BA55 /* Atlas.plist in Resources */,
 				4E9416F51DFC82D00009BA55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585757FE249D7C2E00B5F4ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5857580E249D7C2E00B5F4ED /* Main.storyboard in Resources */,
+				58575810249D7C3100B5F4ED /* Assets.xcassets in Resources */,
+				58575813249D7C3100B5F4ED /* LaunchScreen.storyboard in Resources */,
+				5857581F249D7C9700B5F4ED /* Atlas.plist in Resources */,
+				58575823249D7C9700B5F4ED /* sprites.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +250,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		585757FC249D7C2E00B5F4ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5857580B249D7C2E00B5F4ED /* GameViewController.swift in Sources */,
+				58575820249D7C9700B5F4ED /* Lemming.swift in Sources */,
+				58575803249D7C2E00B5F4ED /* AppDelegate.swift in Sources */,
+				5857581E249D7C9700B5F4ED /* SpriteLoader.swift in Sources */,
+				58575822249D7C9700B5F4ED /* LemmingsScene.swift in Sources */,
+				58575821249D7C9700B5F4ED /* LemmingsCanvas.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -170,6 +272,22 @@
 				4E9416F41DFC82D00009BA55 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5857580C249D7C2E00B5F4ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5857580D249D7C2E00B5F4ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58575811249D7C3100B5F4ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58575812249D7C3100B5F4ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -271,7 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SR5D6FC58T;
 				INFOPLIST_FILE = TouchLemmings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TouchLemmings;
@@ -286,12 +404,80 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SR5D6FC58T;
 				INFOPLIST_FILE = TouchLemmings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TouchLemmings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		58575816249D7C3100B5F4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR5D6FC58T;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = iOSTouchLemmings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = kayley.name.iOSTouchLemmings;
+				PRODUCT_NAME = "Evie's Lemmings";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58575817249D7C3100B5F4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR5D6FC58T;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = iOSTouchLemmings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = kayley.name.iOSTouchLemmings;
+				PRODUCT_NAME = "Evie's Lemmings";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -307,11 +493,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E9416F91DFC82D00009BA55 /* Build configuration list for PBXNativeTarget "TouchLemmings" */ = {
+		4E9416F91DFC82D00009BA55 /* Build configuration list for PBXNativeTarget "MacTouchLemmings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4E9416FA1DFC82D00009BA55 /* Debug */,
 				4E9416FB1DFC82D00009BA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58575815249D7C3100B5F4ED /* Build configuration list for PBXNativeTarget "iOSTouchLemmings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58575816249D7C3100B5F4ED /* Debug */,
+				58575817249D7C3100B5F4ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
