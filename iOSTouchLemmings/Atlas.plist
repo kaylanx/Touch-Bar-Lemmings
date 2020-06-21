@@ -318,7 +318,7 @@
 			<real>0.767</real>
 		</dict>
 	</array>
-	<key>fall</key>
+	<key>parachute</key>
 	<array>
 		<dict>
 			<key>Height</key>
@@ -359,6 +359,29 @@
 			<real>0.042</real>
 			<key>Y</key>
 			<real>0.43</real>
+		</dict>
+	</array>
+	<key>falling</key>
+	<array>
+		<dict>
+			<key>Height</key>
+			<real>0.17</real>
+			<key>Width</key>
+			<real>0.0361</real>
+			<key>X</key>
+			<real>0.252</real>
+			<key>Y</key>
+			<real>0.45</real>
+		</dict>
+		<dict>
+			<key>Height</key>
+			<real>0.17</real>
+			<key>Width</key>
+			<real>0.0361</real>
+			<key>X</key>
+			<real>0.291</real>
+			<key>Y</key>
+			<real>0.46</real>
 		</dict>
 	</array>
 	<key>jump</key>

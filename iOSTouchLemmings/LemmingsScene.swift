@@ -26,12 +26,6 @@ class LemmmingsScene: SKScene, SKPhysicsContactDelegate {
       if case State.walking(let direction) = lemmingB.state {
         lemmingB.state = .walking(direction: direction.theOtherDirection())
       }
-      if case State.falling = lemmingA.state {
-        lemmingA.state = .jumping
-      }
-      if case State.falling = lemmingB.state {
-        lemmingB.state = .jumping
-      }
     }
   }
   
@@ -41,9 +35,9 @@ class LemmmingsScene: SKScene, SKPhysicsContactDelegate {
     
     if location.y > 40 {
       lemming.position = location
-      lemming.state = .falling
+      lemming.state = .parachuting
     } else {
-      lemming.position = location
+      lemming.position = CGPoint(x: location.x, y: 14)
       lemming.state = .walking(direction: Bool.random() ? .left : .right)
     }
     
