@@ -35,16 +35,16 @@ class LemmmingsScene: SKScene, SKPhysicsContactDelegate {
     }
   }
   
-  func addLemming(at: CGPoint) {
+  func addLemming(at location: CGPoint) {
     let lemming = Lemming()
     scene?.addChild(lemming)
     
-    if Bool.random() {
-      lemming.position = CGPoint(x: at.x, y: 40)
+    if location.y > 40 {
+      lemming.position = location
       lemming.state = .falling
     } else {
-      lemming.position = at
-      lemming.state = .walking(direction: .left)
+      lemming.position = location
+      lemming.state = .walking(direction: Bool.random() ? .left : .right)
     }
     
     lemmings.append(lemming)
@@ -80,7 +80,7 @@ class LemmmingsScene: SKScene, SKPhysicsContactDelegate {
   
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     if let touch = touches.first {
-      let location = CGPoint(x: touch.location(in: self.view).x, y: 14)
+      let location = touch.location(in: self)
       
       if let lemming = lemmingAt(point: location) {
         lemming.toggleState()
