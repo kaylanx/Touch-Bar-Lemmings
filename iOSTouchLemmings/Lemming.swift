@@ -123,40 +123,21 @@ class Lemming: SKSpriteNode {
   }
   
   func parachute() {
-    removeAllActions()
-    let textures = SpriteLoader.loadParachutingTextures()
-    let animate = SKAction.animate(with: textures, timePerFrame: 0.15)
-    let animateFallingAction = SKAction.repeatForever(animate)
-    
-    if let scene = self.scene {
-      let heightOfScene = scene.size.height
-      let distanceHeightOffset = heightOfScene - self.position.y
-      
-      let distanceRemaining = heightOfScene - distanceHeightOffset
-
-      let distanceRemainingAsAPercentageOfHeight = distanceRemaining / heightOfScene * 100
-      let duration = distanceRemainingAsAPercentageOfHeight / 100 * 60
-      let durationTimeInterval = TimeInterval(duration)
-  
-      let y = (-self.position.y) + self.size.height
-      let moveAction = SKAction.moveBy(x: 0, y: y, duration: durationTimeInterval)
-      
-      physicsBody?.categoryBitMask = Lemming.parachutingCategory
-      physicsBody?.contactTestBitMask = Lemming.walkingCategory
-      physicsBody?.collisionBitMask = Lemming.walkingCategory
-      
-      run(animateFallingAction)
-      run(moveAction) {
-        self.toggleState()
-      }
-    }
+    commonFall(textures: SpriteLoader.loadParachutingTextures(),
+               baseDuration: 60,
+               categoryBitMask: Lemming.parachutingCategory)
   }
   
   func fall() {
+    commonFall(textures: SpriteLoader.loadFallingTextures(),
+               baseDuration: 1,
+               categoryBitMask: Lemming.fallingCategory)
+  }
+  
+  private func commonFall(textures:  [SKTexture], baseDuration: CGFloat, categoryBitMask: UInt32) {
     removeAllActions()
-    let textures = SpriteLoader.loadFallingTextures()
     let animate = SKAction.animate(with: textures, timePerFrame: 0.15)
-    let animateFallingAction = SKAction.repeatForever(animate)
+    let animateTexturesAction = SKAction.repeatForever(animate)
     
     if let scene = self.scene {
       let heightOfScene = scene.size.height
@@ -165,17 +146,17 @@ class Lemming: SKSpriteNode {
       let distanceRemaining = heightOfScene - distanceHeightOffset
       
       let distanceRemainingAsAPercentageOfHeight = distanceRemaining / heightOfScene * 100
-      let duration = distanceRemainingAsAPercentageOfHeight / 100 * 1
+      let duration = distanceRemainingAsAPercentageOfHeight / 100 * baseDuration
       let durationTimeInterval = TimeInterval(duration)
       
       let y = (-self.position.y) + self.size.height
       let moveAction = SKAction.moveBy(x: 0, y: y, duration: durationTimeInterval)
       
-      physicsBody?.categoryBitMask = Lemming.parachutingCategory
+      physicsBody?.categoryBitMask = categoryBitMask
       physicsBody?.contactTestBitMask = Lemming.walkingCategory
       physicsBody?.collisionBitMask = Lemming.walkingCategory
       
-      run(animateFallingAction)
+      run(animateTexturesAction)
       run(moveAction) {
         self.toggleState()
       }
