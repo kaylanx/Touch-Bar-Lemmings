@@ -17,6 +17,8 @@
 		4E9417051DFD19550009BA55 /* Lemming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9417041DFD19550009BA55 /* Lemming.swift */; };
 		4E9417071DFD44C50009BA55 /* Atlas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E9417061DFD44C50009BA55 /* Atlas.plist */; };
 		4E9417091DFD840B0009BA55 /* sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E9417081DFD840B0009BA55 /* sprites.png */; };
+		585699422517899800F6023A /* Touch_CreaturesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585699412517899800F6023A /* Touch_CreaturesUITests.swift */; };
+		5856994E25178A2900F6023A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856994D25178A2900F6023A /* SnapshotHelper.swift */; };
 		58575803249D7C2E00B5F4ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58575802249D7C2E00B5F4ED /* AppDelegate.swift */; };
 		5857580B249D7C2E00B5F4ED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857580A249D7C2E00B5F4ED /* GameViewController.swift */; };
 		5857580E249D7C2E00B5F4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5857580C249D7C2E00B5F4ED /* Main.storyboard */; };
@@ -32,6 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		585699442517899800F6023A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E9416E21DFC82D00009BA55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 585757FF249D7C2E00B5F4ED;
+			remoteInfo = iOSTouchLemmings;
+		};
 		5857582F249F722400B5F4ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4E9416E21DFC82D00009BA55 /* Project object */;
@@ -54,7 +63,11 @@
 		4E9417041DFD19550009BA55 /* Lemming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lemming.swift; sourceTree = "<group>"; };
 		4E9417061DFD44C50009BA55 /* Atlas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Atlas.plist; sourceTree = "<group>"; };
 		4E9417081DFD840B0009BA55 /* sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprites.png; sourceTree = "<group>"; };
-		58575800249D7C2E00B5F4ED /* Evie's Lemmings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Evie's Lemmings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5856993F2517899800F6023A /* Touch CreaturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Touch CreaturesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		585699412517899800F6023A /* Touch_CreaturesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_CreaturesUITests.swift; sourceTree = "<group>"; };
+		585699432517899800F6023A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5856994D25178A2900F6023A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		58575800249D7C2E00B5F4ED /* Touch Creatures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Touch Creatures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58575802249D7C2E00B5F4ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5857580A249D7C2E00B5F4ED /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5857580D249D7C2E00B5F4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +87,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		4E9416E71DFC82D00009BA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5856993C2517899800F6023A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -103,6 +123,7 @@
 				4E9416EC1DFC82D00009BA55 /* TouchLemmings */,
 				58575801249D7C2E00B5F4ED /* iOSTouchLemmings */,
 				5857582B249F722400B5F4ED /* EviesLemmingsTests */,
+				585699402517899800F6023A /* Touch CreaturesUITests */,
 				4E9416EB1DFC82D00009BA55 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,8 +132,9 @@
 			isa = PBXGroup;
 			children = (
 				4E9416EA1DFC82D00009BA55 /* MacTouchLemmings.app */,
-				58575800249D7C2E00B5F4ED /* Evie's Lemmings.app */,
+				58575800249D7C2E00B5F4ED /* Touch Creatures.app */,
 				5857582A249F722400B5F4ED /* EviesLemmingsTests.xctest */,
+				5856993F2517899800F6023A /* Touch CreaturesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +155,16 @@
 				4E9416F61DFC82D00009BA55 /* Info.plist */,
 			);
 			path = TouchLemmings;
+			sourceTree = "<group>";
+		};
+		585699402517899800F6023A /* Touch CreaturesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5856994D25178A2900F6023A /* SnapshotHelper.swift */,
+				585699412517899800F6023A /* Touch_CreaturesUITests.swift */,
+				585699432517899800F6023A /* Info.plist */,
+			);
+			path = "Touch CreaturesUITests";
 			sourceTree = "<group>";
 		};
 		58575801249D7C2E00B5F4ED /* iOSTouchLemmings */ = {
@@ -183,6 +215,24 @@
 			productReference = 4E9416EA1DFC82D00009BA55 /* MacTouchLemmings.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5856993E2517899800F6023A /* Touch CreaturesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585699462517899800F6023A /* Build configuration list for PBXNativeTarget "Touch CreaturesUITests" */;
+			buildPhases = (
+				5856993B2517899800F6023A /* Sources */,
+				5856993C2517899800F6023A /* Frameworks */,
+				5856993D2517899800F6023A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				585699452517899800F6023A /* PBXTargetDependency */,
+			);
+			name = "Touch CreaturesUITests";
+			productName = "Touch CreaturesUITests";
+			productReference = 5856993F2517899800F6023A /* Touch CreaturesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		585757FF249D7C2E00B5F4ED /* iOSTouchLemmings */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58575815249D7C3100B5F4ED /* Build configuration list for PBXNativeTarget "iOSTouchLemmings" */;
@@ -197,7 +247,7 @@
 			);
 			name = iOSTouchLemmings;
 			productName = iOSTouchLemmings;
-			productReference = 58575800249D7C2E00B5F4ED /* Evie's Lemmings.app */;
+			productReference = 58575800249D7C2E00B5F4ED /* Touch Creatures.app */;
 			productType = "com.apple.product-type.application";
 		};
 		58575829249F722400B5F4ED /* EviesLemmingsTests */ = {
@@ -224,24 +274,29 @@
 		4E9416E21DFC82D00009BA55 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Erik Olsson";
 				TargetAttributes = {
 					4E9416E91DFC82D00009BA55 = {
 						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+					5856993E2517899800F6023A = {
+						CreatedOnToolsVersion = 12.0;
 						DevelopmentTeam = SR5D6FC58T;
 						ProvisioningStyle = Automatic;
+						TestTargetID = 585757FF249D7C2E00B5F4ED;
 					};
 					585757FF249D7C2E00B5F4ED = {
 						CreatedOnToolsVersion = 11.2.1;
 						DevelopmentTeam = SR5D6FC58T;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					58575829249F722400B5F4ED = {
 						CreatedOnToolsVersion = 11.2.1;
 						DevelopmentTeam = SR5D6FC58T;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 585757FF249D7C2E00B5F4ED;
 					};
 				};
@@ -262,6 +317,7 @@
 				4E9416E91DFC82D00009BA55 /* MacTouchLemmings */,
 				585757FF249D7C2E00B5F4ED /* iOSTouchLemmings */,
 				58575829249F722400B5F4ED /* EviesLemmingsTests */,
+				5856993E2517899800F6023A /* Touch CreaturesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +331,13 @@
 				4E9416F21DFC82D00009BA55 /* Assets.xcassets in Resources */,
 				4E9417071DFD44C50009BA55 /* Atlas.plist in Resources */,
 				4E9416F51DFC82D00009BA55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5856993D2517899800F6023A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +376,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5856993B2517899800F6023A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585699422517899800F6023A /* Touch_CreaturesUITests.swift in Sources */,
+				5856994E25178A2900F6023A /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		585757FC249D7C2E00B5F4ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,6 +409,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		585699452517899800F6023A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 585757FF249D7C2E00B5F4ED /* iOSTouchLemmings */;
+			targetProxy = 585699442517899800F6023A /* PBXContainerItemProxy */;
+		};
 		58575830249F722400B5F4ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 585757FF249D7C2E00B5F4ED /* iOSTouchLemmings */;
@@ -489,13 +566,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SR5D6FC58T;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TouchLemmings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TouchLemmings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -505,14 +584,64 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SR5D6FC58T;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = TouchLemmings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TouchLemmings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		585699472517899800F6023A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR5D6FC58T;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Touch CreaturesUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "name.kayley.Touch-CreaturesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSTouchLemmings;
+			};
+			name = Debug;
+		};
+		585699482517899800F6023A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SR5D6FC58T;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Touch CreaturesUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "name.kayley.Touch-CreaturesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iOSTouchLemmings;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -533,8 +662,8 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = SR5D6FC58T;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = iOSTouchLemmings/Info.plist;
@@ -542,8 +671,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = kayley.name.iOSTouchCreatures;
-				PRODUCT_NAME = "Evie's Lemmings";
+				PRODUCT_BUNDLE_IDENTIFIER = name.kayley.iOSTouchCreatures;
+				PRODUCT_NAME = "Touch Creatures";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development name.kayley.iOSTouchCreatures";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,16 +697,17 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = SR5D6FC58T;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = iOSTouchLemmings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = kayley.name.iOSTouchCreatures;
-				PRODUCT_NAME = "Evie's Lemmings";
+				PRODUCT_BUNDLE_IDENTIFIER = name.kayley.iOSTouchCreatures;
+				PRODUCT_NAME = "Touch Creatures";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore name.kayley.iOSTouchCreatures";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -601,7 +732,7 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = SR5D6FC58T;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = EviesLemmingsTests/Info.plist;
@@ -611,6 +742,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = kayley.name.EviesLemmingsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -635,7 +768,7 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = SR5D6FC58T;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = EviesLemmingsTests/Info.plist;
@@ -644,6 +777,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = kayley.name.EviesLemmingsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -669,6 +804,15 @@
 			buildConfigurations = (
 				4E9416FA1DFC82D00009BA55 /* Debug */,
 				4E9416FB1DFC82D00009BA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585699462517899800F6023A /* Build configuration list for PBXNativeTarget "Touch CreaturesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585699472517899800F6023A /* Debug */,
+				585699482517899800F6023A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
