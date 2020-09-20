@@ -21,6 +21,7 @@ class LemmingsCanvas: SKView {
     scene.scaleMode = .resizeFill
     scene.physicsWorld.gravity = CGVector.init(dx: 0, dy: 0)
     scene.physicsWorld.contactDelegate = scene
+    scene.backgroundColor = SKColor.black
   }
   
   #if !os(iOS)
