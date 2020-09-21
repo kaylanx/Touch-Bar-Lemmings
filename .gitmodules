@@ -1,0 +1,3 @@
+[submodule "Touch-Bar-Lemmings-Fastlane"]
+	path = Touch-Bar-Lemmings-Fastlane/fastlane/
+	url = git@github.com:kaylanx/Touch-Bar-Lemmings-Fastlane.git
